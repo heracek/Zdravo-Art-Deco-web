@@ -1,56 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="cs">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Zdravo Art Deco<% if @item[:title] %> - <%= @item[:title] %><% end %></title>
-    <link rel="stylesheet" href="/media/css/blueprint/screen.css" type="text/css" media="screen, projection">
-    <link rel="stylesheet" href="/media/css/blueprint/print.css" type="text/css" media="print">
-    <!--[if lt IE 8]><link rel="stylesheet" href="/media/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
 
-    <link rel="stylesheet" href="/media/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
-    <link rel="stylesheet" href="/media/css/main.css" type="text/css" media="screen, projection">
-  
-  </head>
-  <body>
-    <div class="container xshowgrid">
-      <img src="/media/img/www/lista.png" />
-      <div class="top-menu">
-      <div>
-        <a class="" href="/uvod/">Úvod</a>
-      </div>
-      <div>
-        <a class="" href="/novinky/">Novinky</a>
-      </div>
-      <div>
-        <a class="" href="/produkty/">Produkty</a>
-      </div>
-      <div>
-        <a class="" href="/fotogalerie/">Fotogalerie</a>
-      </div>
-      <div>
-        <a class="" href="/reference/">Reference</a>
-      </div>
-      <div>
-        <a class="" href="/literarni-stavarna/">Literární<br/>šťavárna</a>
-      </div>
-      <div>
-        <a class="" href="/art/">Art</a>
-      </div>
-      <div>
-        <a class="" href="/deco/">Deco</a>
-      </div>
-      <div>
-        <a class="" href="/chat/">Chat</a>
-      </div>
-      <div>
-        <a class="" href="/kontakt/">Kontakt</a>
-      </div>
-      </div>
-      <hr>
-      <div>        
-        <%= yield %>
-      </div>
-    </div>
-  </body>
-</html>
+<a href="/uvod/"><img src="/media/img/www/lista.png" /></a>
+
+<div class="top-menu">
+  <div>
+    <a class="" href="/uvod/">Úvod</a>
+  </div>
+  <div>
+    <a class="" href="/novinky/">Novinky</a>
+  </div>
+  <div>
+    <a class="" href="/produkty/">Produkty</a>
+  </div>
+  <div>
+    <a class="" href="/fotogalerie/">Fotogalerie</a>
+  </div>
+  <div>
+    <a class="" href="/reference/">Reference</a>
+  </div>
+  <div>
+    <a class="" href="/literarni-stavarna/">Literární<br/>šťavárna</a>
+  </div>
+  <div>
+    <a class="" href="/art/">Art</a>
+  </div>
+  <div>
+    <a class="" href="/deco/">Deco</a>
+  </div>
+  <div>
+    <a class="" href="/chat/">Chat</a>
+  </div>
+  <div>
+    <a class="" href="/kontakt/">Kontakt</a>
+  </div>
+</div>
+<hr>
+<div>
+  <%= yield %>
+</div>

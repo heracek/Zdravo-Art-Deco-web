@@ -17,16 +17,23 @@ compile '/media/*/' do
   # don’t filter or layout
 end
 
+compile '/' do
+  filter :erb
+  layout 'base'
+end
+
 compile '/produkty/' do
   filter :erb
   layout 'products'
   layout 'default'
+  layout 'base'
 end
 
 compile '/produkty/*/' do
   filter :erb
   layout 'products'
   layout 'default'
+  layout 'base'
 end
 
 compile '*' do
@@ -35,6 +42,7 @@ compile '*' do
   else
     filter :erb
     layout 'default'
+    layout 'base'
   end
 end
 
