@@ -1,18 +1,13 @@
-<%
-html = ""
-first = true
-
-product_pages = items.select { |i| i[:kind] == 'produkty' }.
-   sort_by { |a| a[:order] }
-
-product_pages.each do |proctu_page|
-    html += "<hr />" if not first
-    first = false
-  html += "<a href=\"#{config[:base_url]}#{proctu_page.path}\"><h1>#{proctu_page[:title]}</h1></a>"
-end
-%>
-<%=html%>
-
-<hr/>
+<div class="span-4 sub-menu">
+  <%
+  product_pages = items.select { |i| i[:kind] == 'produkty' }.
+     sort_by { |a| a[:order] }
+  product_pages.each do |proctu_page|
+  %>
+    <div>
+      <a class="span-4" href="<%= proctu_page.path %>"><%= proctu_page[:title] %></a>
+    </div>
+  <% end %>
+</div>
 
 <%= yield %>
