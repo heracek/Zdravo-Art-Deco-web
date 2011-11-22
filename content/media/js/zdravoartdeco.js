@@ -1,5 +1,5 @@
 $(function() {
-  $('img:visible').filter(function(){
+  $('img').filter(function(){
     return /(-resized\.(jpg|jpeg|png)$)/.test(this.src);
   }).each(function(){
     var img_src = $(this).attr('src');
